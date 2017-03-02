@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="MoaChartView">
+        <attr name="animation" format="boolean"/>
+        <attr name="round" format="boolean" />
+        <attr name="shadow" format="boolean" />
+        <attr name="showTitle" format="boolean" />
+        <attr name="shadowColor" format="color" />
+        <attr name="chart_background" format="color" />
+        <attr name="isDisperse" format="boolean"/> <!--是否显示扇形的分割线-->
+        <attr name="spliteLineStroke" format="dimension"/><!--分割线的大小-->
+        <attr name="isMarkShow" format="boolean"/><!--是否显示标注-->
+        <attr name="circle_padding" format="dimension"/>
+        <attr name="mark_text_size" format="dimension"/>
+        <attr name="disperse_length" format="dimension"/>
+    </declare-styleable>
+</resources>
