@@ -116,7 +116,12 @@ public class TPieChart extends View {
     @Override
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
-        animatedDraw(canvas);
+        if(clear){
+            clear = false;
+            clear(canvas);
+        }else{
+            animatedDraw(canvas);
+        }
     }
 
     @Override
@@ -298,10 +303,21 @@ public class TPieChart extends View {
         TimeInterpolator interpolator = new LinearInterpolator();
         anim.setInterpolator(interpolator);
         anim.setStartDelay(100);
+        clearDraw();
         anim.start();
     }
 
+    private boolean  clear = false;
 
+    private void clear(Canvas canvas){
+        canvas.drawColor(chartBackgroundColor);
+    }
+
+    public void clearDraw(){
+        clear = true;
+        globalCurrentAngle = 0f;
+        invalidate();
+    }
 // #MARK - Drawing Methods
 
     /**

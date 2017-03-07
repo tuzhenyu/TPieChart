@@ -180,22 +180,6 @@ public class MainActivity extends Activity {
                 TPieChart.setChartItemsList(chartItems11);
                 TPieChart.playAnimation();
                 break;
-
-            case R.id.animationSpeedDefault:
-                TPieChart.playAnimation();
-                break;
-
-            case R.id.animationSpeedSlow:
-                TPieChart.playAnimation();
-                break;
-
-            case R.id.animationSpeedFast:
-                TPieChart.playAnimation();
-                break;
-
-            case R.id.animationSpeedNormal:
-                TPieChart.playAnimation();
-                break;
         }
     }
 
